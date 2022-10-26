@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авторизация</title>
+    <title>Домашняя страница</title>
+    <style>
+        .nubex {
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif; 
+        color: rgb(35, 32, 194);
+        }
+       </style>
 </head>
-<body>
-    <h1>Вход</h1>
-    <form action="/login" method="post">
-        <span>Логин: </span>
-        <input type="text" placeholder="Введите имя"><br>
-        <span>Пароль: </span>
-        <input type="password"><br>
-        <input type="checkbox">
-        <span>Запомнить меня</span><br>
-        <input type="submit" value="Войти">
-    </form>
+<body style="background-color:rgb(145, 34, 139); ">
+    <h1 style="color:white; text-align: center;">Домашняя страница</h1>
+    <img width="800" height="500" src="2.jpg"><br>
+    <a href="auth/signin.html" style="background-color:white;height:1200px;width:800px;border-radius:5px;">Вход</a><br>
+    <a class="nubex" href="auth/signup.html">Регистрация</a>
 </body>
 </html>
