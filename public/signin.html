@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authorization</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Авторизация</title>
 </head>
-<body class="back1">
-    <h1>Sign in</h1>
-    <div style="margin-left: 20px;"> <form action="/login" method="post">
-        <p>Username: 
-        <input style="border-radius:10px;" type="text" placeholder="enter your login"></p>
-        <p>Password: 
-        <input style="border-radius:10px;" type="password" placeholder="enter your password"></p>
-        <input type="checkbox">
-        <span>I'm not a robot.</span><br><br>
-        <input class="button-8" type="submit" value="Sign in"><br>
-        <a href="index.html"><input style="margin-top:5px;" class="button-8" type="button" value="Back home"></a>
-        
-    </form>
-</div>
+
+
+<body>
+    <div class="container">
+        <div class="center-card">
+
+            <h1>Вход</h1>
+            <form action="/login" method="post">
+                <span>Логин: </span>
+                <input type="text" placeholder="Введите имя">
+                <br>
+                <span>Пароль: </span>
+                <input type="password">
+                <br>
+
+                <input type="checkbox">
+                <span>Запомнить меня</span>
+                
+                <br>
+                <input type="submit" value="Войти">
+            </form>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
