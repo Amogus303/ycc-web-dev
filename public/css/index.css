@@ -30,3 +30,46 @@
     border-bottom: 1px solid silver;
 
 }
+.center-card .card-body {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.card-body .field {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 20px 0;
+}
+.field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(71, 66, 66);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+}
+.field input:focus ~ label,
+.field input:valid ~ label {
+    top: -5px;
+    color: #2691d9;
+}
